@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="./css/rhysaastyle.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!--icon-link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/">
+
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Teko:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Teko:wght@300&display=swap"
+    rel="stylesheet">
+
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- Demo styles -->
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=luxqMKA_xQTGRmmnwN8ihzfxlMsot5SKq8fh0nuCK1QDcT5ZI7VC0JXGEhKPjmh9h-skVBfnxRhQc8xzcwwSdg" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9zd2lwZXJqcy5jb20vZGVtb3MvMDIwLW5hdmlnYXRpb24uaHRtbA"/><style>
+  
+  html
+    body 
+    
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+</head>
+  <title>Rhyssa</title>
+</head>
+<body class="index-opt-1">
+  <div class="wrapper">
+  <!--nav1-->
+  <section  class="gray">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6">
+                  <p class="welcome  pt-2 py-2 mb-0">Welcome to Rhyssa Shop</p>
+              </div>
+              <div class="col-lg-6 shop  welcome">
+                <!-- <button class="language ">Privacy Policy
+                  
+                </button>
+            
+                <button class="needhelpbutton">Need help?</button>
+                <button class="faqbutton">Faq</button>
+                      -->
+                 <button class="bttn  shop mt-1 welcome" type="button" 
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-flag-o pr-1" aria-hidden="true"></i>English</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div role="separator" class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+    <button class="bttn welcome dollar mt-1" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dollar(US)</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <div role="separator" class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </div>
+    <a class="btnn shop" > <i class="fa fa-user" aria-hidden="true"></i> Register / Sign in</a> 
+            </div>
+          </div>
+      </div>
+  </section>    
+  <!--nav2-->
+ 
+   <section>
+    <div class="container">
+      <div class="row nav2">
+        <div class="col-md-2 logoo">
+          <img src="images/logo.PNG" class="logo">
+        </div>
+        <div class="col-md-7 pl-5 Categories">
+          <div class="dropdown">
+            <button class="btn5  dropdown-toggle drop" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              All Categories
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+          <div class="searchform1">
+            
+              <form id="newslettervalidate" class="form subscribe">
+                  <div class="control">
+                    
+                      <input type="email" placeholder="Search keyword here..." id="newsletter"
+                             name="email" class="input1">
+                      <button type="submit" title="Subscribe1" class="btn4 subscribe1 firstform">
+                          <span><i class="fa fa-search fa-lg search" aria-hidden="true"></i></span>
+                      </button>
+                  </div>
+              </form>
+          </div>
+      </div>
+
+        <div class="col-md-3 arrow">
+        <div class="row arrow">
+       <div class="col-md-1 heart">
+        <i class="fa fa-heart-o fa-lg" aria-hidden="true"></i>
+       </div>  
+       <div class="col-md-1">
+        <i class="fa fa-cart-arrow-down fa-2x pl-2 " aria-hidden="true"></i>
+       </div>  
+       <div class="col-md-1 pl-2">
+     
+        <p class="pl-5">your cart:</p>
+       </div>  
+        </div>  
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!--nav3-->
+  <section class="orange py-1">
+    <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg  navbar sticky-top">
+
+          <button class="navbar-toggler " type="button" data-toggle="collapse"
+           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown pr-3">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  HOME
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown pr-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  SHOP
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown pr-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  PERFORMANCE
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown pr-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  AUDIO
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown pr-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PAGE 
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown pr-3">
+                <a class="nav-link " href="#" id="navbarDropdown" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  BLOG
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown pr-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  OTHER
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+            
+          </div>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+
+  <!--car-->
+  <section style="background-image: url(images/slide-1.jpg);" class="car1">
+    <div class="container">
+      <div class="row">
+      
+<div class="col-md-8 slide1 text-center">
+  <p class="heading text-center">The road will never be the same of Luxury</p>
+  <p class="content">Inceptos aptent eleifend metus. Porta montes nibh sed mollis nascetur dui</p>
+                            <a href="#" class="btn-shop-now">Shop Now</a>
+</div>
+      </div>
+    </div>
+  </section>
+  <!-- Swiper -->
+  
+   <!-- <div class="swiper-container">
+    <div class="swiper-wrapper">
+   
+      <div class="swiper-slide">
+  
+    <img src="images/slide-3.jpg">
+</div>    -->
+  
+      <!-- <div class="swiper-slide"><img src="images/slide-3.jpg"></div>
+      <div class="swiper-slide"><img src="images/slide-1.jpg"></div>  -->
+      <!-- <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-slide">Slide 10</div> -->
+     <!-- </div>
+    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> 
+   </div>  -->
+<!-- Swiper --> 
+
+
+
+
+
+
+<section class="whitee">
+  <div class="container deals">
+    <div class="row pt-5 ">
+      <div class="col-md-12 px-0 section2"> 
+        <div class="row">
+          <div class="col-md-12">
+            <div class="d-flex-justify-content-start">
+              <p class="title pl-3 ">DAILY DEALS</p>
+            </div>
+        <div class="white selling px-0 d-flex justify-content-end ">
+          
+          <button type="button" class="swiper-button-next1 "><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+          <button type="button" class="swiper-button-prev1 "><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        </div>
+          <!-- <button type="button" class="swiper-button-next"></button>
+          <button type="button" class="swiper-button-prev"></button> -->
+       </div>
+    </div>
+ 
+    
+  </div>
+    </div>
+
+
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+        <div class="row ">
+          <div class="col-md-6">
+          <div class="row dailydeal mb-4 ">
+           <div class="col-md-6">
+            <div class="deal-day">
+              <div class="image">
+                <div class="product">
+                  
+                  <a href="#"><img src="images/top1.PNG" class="top1"></a>
+
+                </div>
+          
+              </div>
+            </div>
+           </div>
+            <div class="col-md-6">
+                <div class="inf0">
+                  <div class="product-name pb-2">Cheetah Turbocharger</div>
+                  <div class="price">
+                    <span class="price rhyssa">$229.00</span>
+                    <span class="strike pl-3">$259.00</span>
+                    <div class="star-rating pt-2">
+                      <i class="fa fa-star star" aria-hidden="true"></i>
+                      <i class="fa fa-star star" aria-hidden="true"></i>
+                      <i class="fa fa-star star" aria-hidden="true"></i>
+                      <i class="fa fa-star star" aria-hidden="true"></i>
+                      <i class="fa fa-star star" aria-hidden="true"></i>
+                      <span class="review">5 Review(s)</div>
+                  </span>
+                  <div class="circles pt-4">
+                  <a class="circle1">
+                    <a class="btn6">00</a>
+                  </a>
+                  <a class="circle1">
+                    <a class="btn6">00</a>
+                  </a>
+                  <a class="circle1">
+                    <a class="btn6">00</a>
+                  </a>
+                  <a class="circle1">
+                    <a class="btn6">00</a>
+                  </a>
+                  </div>
+                  <div class="square pt-3">
+                    <a class="sqaure1">
+                      <a class="btn7">DAYS</a>
+                    </a>
+                    <a class="square">
+                      <a class="btn7">HRS</a>
+                    </a>
+                    <a class="square">
+                      <a class="btn7">MINS</a>
+                    </a>
+                    <a class="square">
+                      <a class="btn7">SECS</a>
+                    </a>
+                    </div>
+                    <p class="cart mt-4">ADD TO CART</p>
+                  </div>
+              
+               </div>
+            </div>
+          </div>
+            </div>
+            <div class="col-md-6 pl-5">
+              <div class="row dailydeal ">
+               <div class="col-md-6">
+                <div class="deal-day">
+                  <div class="image">
+                    <div class="product">
+                      
+                      <a href="#"><img src="images/top1.PNG" class="top1"></a>
+    
+                    </div>
+              
+                  </div>
+                </div>
+               </div>
+                <div class="col-md-6">
+                    <div class="inf0">
+                      <div class="product-name pb-2">Cheetah Turbocharger</div>
+                      <div class="price">
+                        <span class="price rhyssa">$229.00</span>
+                        <span class="strike pl-3">$259.00</span>
+                        <div class="star-rating pt-2">
+                          <i class="fa fa-star star" aria-hidden="true"></i>
+                          <i class="fa fa-star star" aria-hidden="true"></i>
+                          <i class="fa fa-star star" aria-hidden="true"></i>
+                          <i class="fa fa-star star" aria-hidden="true"></i>
+                          <i class="fa fa-star star" aria-hidden="true"></i>
+                          <span class="review">5 Review(s)</div>
+                      </span>
+                      <div class="circles pt-4">
+                      <a class="circle1">
+                        <a class="btn6">00</a>
+                      </a>
+                      <a class="circle1">
+                        <a class="btn6">00</a>
+                      </a>
+                      <a class="circle1">
+                        <a class="btn6">00</a>
+                      </a>
+                      <a class="circle1">
+                        <a class="btn6">00</a>
+                      </a>
+                      </div>
+                      <div class="square pt-3">
+                        <a class="sqaure1">
+                          <a class="btn7">DAYS</a>
+                        </a>
+                        <a class="square">
+                          <a class="btn7">HRS</a>
+                        </a>
+                        <a class="square">
+                          <a class="btn7">MINS</a>
+                        </a>
+                        <a class="square">
+                          <a class="btn7">SECS</a>
+                        </a>
+                        </div>
+                        <p class="cart mt-4">ADD TO CART</p>
+                      </div>
+                  
+                   </div>
+                </div>
+              </div>
+                </div>
+        </div>
+       </div>
+     </div>
+   </div>
+<!--             
+   <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="deal-of-day equal-elem">
+              <div class="product-thumb style1">
+                  <div class="thumb-inner">
+                      <a href="#"><img src="images/top1.PNG" alt="d1"></a>
+                  </div>
+              </div>
+              <div class="product-innfo">
+                  <div class="product-name">Cheetah Turbocharger</div>
+                  <span class="price">
+                    <span class="price rhyssa">$229.00</span>
+                    <span class="strike pl-3">$259.00</span>
+                        
+                      </span>
+                  <div class="star-rating">
+                          <i class="fa fa-star star" aria-hidden="true"></i>
+                          <i class="fa fa-star star" aria-hidden="true"></i>
+                          <i class="fa fa-star star" aria-hidden="true"></i>
+                          <i class="fa fa-star star" aria-hidden="true"></i>
+                          <i class="fa fa-star star" aria-hidden="true"></i>
+                          <span class="review">5 Review(s)</div>
+                      </span>
+                  <div class="product-count-down">
+                      <div class="kt-countdown" data-y="2020" data-m="6" data-d="1" data-h="10" data-i="0"
+                           data-s="0"></div>
+                  </div>
+                  <p class="btn-add-to-cart">Add to cart</p>
+              </div>
+          </div>
+          </div>
+          <div class="col-md-6">
+            <div class="deal-of-day equal-elem">
+              <div class="product-thumb style1">
+                  <div class="thumb-inner">
+                      <a href="#"><img src="images/top1.PNG" alt="d1"></a>
+                  </div>
+              </div>
+              <div class="product-innfo">
+                  <div class="product-name">Cheetah Turbocharger</div>
+                  <span class="price">
+                          <span class="price rhyssa">$229.00</span>
+                          <span class="strike pl-3">$259.00</span>
+                          
+                      </span>
+                  <div class="star-rating">
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                    <i class="fa fa-star star" aria-hidden="true"></i>
+                          <span class="review">5 Review(s)</div>
+                      </span>
+                  <div class="product-count-down">
+                    
+                  </div>
+                  <p class="btn-add-to-cart">Add to cart</p>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+       
+  
+      
+   <!-- <div class="swiper-container">
+    <div class="swiper-wrapper">
+          
+          <div class="swiper-slide pb-5">
+            <div class="card" style="width:18rem">
+              <div class="row boxx">
+                  <div class="col-md-6">
+                      <div class="box2">
+                          <img src="images/top1.PNG" class="top">
+                      </div>
+                     
+                  </div>
+                  <div class="col-md-6">
+                      <div class="box1 pt-4">
+                         <p class="ptitle mb-2">Multi-plate-brake</p>
+                         <p class="price rhyssa mb-3">
+                           $229.00
+                           <span class="strike pl-3">$259.00</span>
+                         </p>
+                 <div class="star-rating mb-3">
+                   <i class="fa fa-star star" aria-hidden="true"></i>
+                   <i class="fa fa-star star" aria-hidden="true"></i>
+                   <i class="fa fa-star star" aria-hidden="true"></i>
+                   <i class="fa fa-star star" aria-hidden="true"></i>
+                   <i class="fa fa-star star" aria-hidden="true"></i>
+                   <span class="review ">5 Review(s)</span>
+                 </div>
+                 
+
+                 <a href="#" class="add-to-cart-btn mb-3">Add to cart</a>
+                          
+                        </div>
+                  </div>
+              </div>
+             
+            </div>
+          </div>
+            
+          
+          
+          
+    </div>
+    
+    </div> -->
+            
+        </div>
+        </div>
+    </div>
+  </div>
+  </section> 
+    <!--daily deals-->
+<section class="whitee">
+  <div class="container ">
+    <div class="row">
+        <div class="col-md-5">
+        <div class="card car">
+            <div class="card-body" style="background-image: url('images/banner-1.jpg');">
+                <h4 class="auto mt-5">Auto Car Dealer</h4>
+  <h3 class="get">Sale Up to <span class="rhyssa"><strong>40%</strong></span> Off</h3></img>
+  <a class="button btn1 mb-5" href="#">SHOP NOW</a>
+  
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+            <div class="card">
+                <div class="card-body" style="background-image: url('images/banner-2.jpg');border: none;">
+                    <h4 class="auto mt-5">Integer adclorem</h4>
+                <h3 class="get">Get <span class="rhyssa"><strong>25%</strong></span>  Flat Off</h3>   
+                <a class="button btn1 mb-5" href="#">SHOP NOW</a>
+                </div>
+              </div>
+            </div>
+    </div>
+        </div> 
+</section>
+       <!----featured products----> 
+ <section class="whitee">
+  <div class="container ">
+    <div class="row pt-5 pb-5">
+       <div class="col-lg-6 ">
+           <p class="title pl-3">FEATURED PRODUCTS</p>
+       </div>
+       <div class="col-lg-6 white">
+      <a class=" btn2">ALL PRODUCTS</a>
+      <a class=" btn2">PERFORMANCE</a>
+      <a class=" btn2">EXTERIOR</a>
+      <a class=" btn2">WHEEL</a>
+      </div>
+   </div>
+   <div class="row">
+       <div class="col-md-3 mb-4">
+          <div class="box" >
+              <img src="images/feature3.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="ptitle">Fleece Performance</p>
+                <p class="price rhyssa">
+                  $229.00
+                  <span class="strike pl-3">$259.00</span>
+                </p>
+              
+                <div class="star-rating">
+                  <i class="fa fa-star star" aria-hidden="true"></i>
+                  <i class="fa fa-star star" aria-hidden="true"></i>
+                  <i class="fa fa-star star" aria-hidden="true"></i>
+                  <i class="fa fa-star star" aria-hidden="true"></i>
+                  <i class="fa fa-star star" aria-hidden="true"></i>
+                  <span class="review">5 Review(s)</span>
+                </div>
+              </div>
+            </div>
+       </div>
+       <div class="col-md-3">
+          <div class="box" >
+              <img src="images/feature3.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="ptitle">Outlaw Exhaust System</p>
+                <p class="price rhyssa">
+                  $229.00
+                  <span class="strike pl-3">$259.00</span>
+                </p>
+                <div class="star-rating">
+                  <i class="fa fa-star star" aria-hidden="true"></i>
+                  <i class="fa fa-star star" aria-hidden="true"></i>
+                  <i class="fa fa-star star" aria-hidden="true"></i>
+                  <i class="fa fa-star star" aria-hidden="true"></i>
+                  <i class="fa fa-star star" aria-hidden="true"></i>
+                  <span class="review">5 Review(s)</span>
+                </div>
+              </div>
+            </div>   
+      </div>
+      <div class="col-md-3">
+        <div class="box" >
+            <img src="images/feature3.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="ptitle">Outlaw Exhaust System</p>
+              <p class="price rhyssa">
+                $229.00
+                <span class="strike pl-3">$259.00</span>
+              </p>
+              <div class="star-rating">
+                <i class="fa fa-star star" aria-hidden="true"></i>
+                <i class="fa fa-star star" aria-hidden="true"></i>
+                <i class="fa fa-star star" aria-hidden="true"></i>
+                <i class="fa fa-star star" aria-hidden="true"></i>
+                <i class="fa fa-star star" aria-hidden="true"></i>
+                <span class="review">5 Review(s)</span>
+              </div>
+            </div>
+          </div>   
+    </div>
+    <div class="col-md-3">
+      <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Outlaw Exhaust System</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div>   
+  </div>
+   </div> 
+   <div class="row">
+    <div class="col-md-3">
+      <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Outlaw Exhaust System</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div>   
+  </div>
+  <div class="col-md-3">
+    <div class="box" >
+        <img src="images/feature3.PNG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="ptitle">Outlaw Exhaust System</p>
+          <p class="price rhyssa">
+            $229.00
+            <span class="strike pl-3">$259.00</span>
+          </p>
+          <div class="star-rating">
+            <i class="fa fa-star star" aria-hidden="true"></i>
+            <i class="fa fa-star star" aria-hidden="true"></i>
+            <i class="fa fa-star star" aria-hidden="true"></i>
+            <i class="fa fa-star star" aria-hidden="true"></i>
+            <i class="fa fa-star star" aria-hidden="true"></i>
+            <span class="review">5 Review(s)</span>
+          </div>
+        </div>
+      </div>   
+</div>
+     <div class="col-md-3 w-100 pr-3">
+         <div class="box" >
+             <img src="images/feature3.PNG" class="card-img-top" alt="...">
+             <div class="card-body">
+               <p class="ptitle">Blue Wheel Inserts</p>
+               <p class="price rhyssa">
+                  $229.00
+                  <span class="strike pl-3">$259.00</span>
+                </p>
+                <div class="star-rating">
+                  <i class="fa fa-star star" aria-hidden="true"></i>
+                  <i class="fa fa-star star" aria-hidden="true"></i>
+                  <i class="fa fa-star star" aria-hidden="true"></i>
+                  <i class="fa fa-star star" aria-hidden="true"></i>
+                  <i class="fa fa-star star" aria-hidden="true"></i>
+                  <span class="review">5 Review(s)</span>
+                </div>
+             </div>
+           </div>    
+     </div>
+     <div class="col-md-3">
+      <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Outlaw Exhaust System</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div>   
+  </div>
+
+  </div> 
+</div>
+ </section>
+       <!--top selling-->
+      <section >
+          <div class="container mt-5  ">
+              <div class="row pt-5 ">
+                 <div class="col-lg-6 ">
+                     <p class="title pl-3">TOP SELLING</p>
+                 </div>
+                 <div class="col-lg-6 white">
+                <a class=" btn2">ALL PRODUCTS</a>
+                <a class=" btn2">PERFORMANCE</a>
+                <a class=" btn2">EXTERIOR</a>
+                <a class=" btn2">WHEEL</a>
+                </div> 
+                <div class="col-md-4 mb-4">
+                 <div class="card">
+                     <div class="row boxx">
+                         <div class="col-md-5">
+                             <div class="box2">
+                                 <img src="images/top1.PNG" class="top">
+                             </div>
+                            
+                         </div>
+                         <div class="col-md-7">
+                             <div class="box1 pt-4">
+                                <p class="ptitle mb-2">Multi-plate-brake</p>
+                                <p class="price rhyssa mb-3">
+                                  $229.00
+                                  <span class="strike pl-3">$259.00</span>
+                                </p>
+                        <div class="star-rating mb-3">
+                          <i class="fa fa-star star" aria-hidden="true"></i>
+                          <i class="fa fa-star star" aria-hidden="true"></i>
+                          <i class="fa fa-star star" aria-hidden="true"></i>
+                          <i class="fa fa-star star" aria-hidden="true"></i>
+                          <i class="fa fa-star star" aria-hidden="true"></i>
+                          <span class="review ">5 Review(s)</span>
+                        </div>
+                        <a href="#" class="add-to-cart-btn mb-3">Add to cart</a>
+                                 
+                               </div>
+                         </div>
+                     </div>
+                    
+                   </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card  brake">
+                      <div class="row boxx">
+                          <div class="col-md-5">
+                              <div class="box2">
+                                  <img src="images/top1.PNG" class="top">
+                              </div>
+                             
+                          </div>
+                          <div class="col-md-7">
+                              <div class="box1 pt-4">
+                                 <p class="ptitle mb-2">Multi-plate-brake</p>
+                                 <p class="price rhyssa mb-3">
+                                  $229.00
+                                  <span class="strike pl-3">$259.00</span>
+                                </p>
+                         <div class="star-rating mb-3">
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <span class="review ">5 Review(s)</span>
+                         </div>
+                         <a href="#" class="add-to-cart-btn mb-3">Add to cart</a>
+                                  
+                                </div>
+                          </div>
+                      </div>
+                     
+                    </div>
+                 </div>
+                 <div class="col-md-4">
+                  <div class="card  brake">
+                      <div class="row boxx">
+                          <div class="col-md-5">
+                              <div class="box2">
+                                  <img src="images/top1.PNG" class="top">
+                              </div>
+                             
+                          </div>
+                          <div class="col-md-7">
+                              <div class="box1 pt-4">
+                                 <p class="ptitle mb-2">Multi-plate-brake</p>
+                                 <p class="price rhyssa mb-3">
+                                  $229.00
+                                  <span class="strike pl-3">$259.00</span>
+                                </p>
+                         <div class="star-rating mb-3">
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <span class="review ">5 Review(s)</span>
+                         </div>
+                         <a href="#" class="add-to-cart-btn mb-3">Add to cart</a>
+                                  
+                                </div>
+                          </div>
+                      </div>
+                     
+                    </div>
+                 </div>
+                 <div class="col-md-4">
+                  <div class="card  brake">
+                      <div class="row boxx">
+                          <div class="col-md-5">
+                              <div class="box2">
+                                  <img src="images/top1.PNG" class="top">
+                              </div>
+                             
+                          </div>
+                          <div class="col-md-7">
+                              <div class="box1 pt-4">
+                                 <p class="ptitle mb-2">Multi-plate-brake</p>
+                                 <p class="price rhyssa mb-3">
+                                  $229.00
+                                  <span class="strike pl-3">$259.00</span>
+                                </p>
+                         <div class="star-rating mb-3">
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <span class="review ">5 Review(s)</span>
+                         </div>
+                         <a href="#" class="add-to-cart-btn mb-3">Add to cart</a>
+                                  
+                                </div>
+                          </div>
+                      </div>
+                     
+                    </div>
+                 </div>
+                 <div class="col-md-4">
+                  <div class="card  brake">
+                      <div class="row boxx">
+                          <div class="col-md-5">
+                              <div class="box2">
+                                  <img src="images/top1.PNG" class="top">
+                              </div>
+                             
+                          </div>
+                          <div class="col-md-7">
+                              <div class="box1 pt-4">
+                                 <p class="ptitle mb-2">Multi-plate-brake</p>
+                                 <p class="price rhyssa mb-3">
+                                  $229.00
+                                  <span class="strike pl-3">$259.00</span>
+                                </p>
+                         <div class="star-rating mb-3">
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <span class="review ">5 Review(s)</span>
+                         </div>
+                         <a href="#" class="add-to-cart-btn mb-3">Add to cart</a>
+                                  
+                                </div>
+                          </div>
+                      </div>
+                     
+                    </div>
+                 </div>
+                 <div class="col-md-4">
+                  <div class="card  brake">
+                      <div class="row boxx">
+                          <div class="col-md-5">
+                              <div class="box2">
+                                  <img src="images/top1.PNG" class="top">
+                              </div>
+                             
+                          </div>
+                          <div class="col-md-7">
+                              <div class="box1 pt-4">
+                                 <p class="ptitle mb-2">Multi-plate-brake</p>
+                                 <p class="price rhyssa mb-3">
+                                  $229.00
+                                  <span class="strike pl-3">$259.00</span>
+                                </p>
+                         <div class="star-rating mb-3">
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <i class="fa fa-star star" aria-hidden="true"></i>
+                           <span class="review ">5 Review(s)</span>
+                         </div>
+                         <a href="#" class="add-to-cart-btn mb-3">Add to cart</a>
+                                  
+                                </div>
+                          </div>
+                      </div>
+                     
+                    </div>
+                 </div>
+ 
+              </div>
+          </div>
+      </section>
+<!--Performance to Drive The World-->
+<section class="pt-2 pb-4 whitee">
+  <div class="container performance mt-5 mb-5">
+      <div class="row pt-5 pb-5">
+          <div class="col-md-12 text-center">
+              <p class="drive mb-1">Performance to Drive The World</p>
+              <p class="all">ALL NEW ENGINE ACCESSORIES</p>
+              <a class="button btn1" href="#">SHOP NOW</a>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Swiper -->
+<section class="whitee">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 px-0">
+      <p class="title pl-3 ">RECENTLY PRODUCTS</p>
+  </div>
+  <div class="col-md-6 white selling px-0">
+    <button type="button" class="swiper-button-next"></button>
+    <button type="button" class=" swiper-button-prev"></button>
+ <!-- <p class="btnnext"><i class="fa fa-angle-left" aria-hidden="true"></i></p>
+ <p class="prev"><i class="fa fa-angle-right" aria-hidden="true"></i></p> -->
+ </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide pb-5">
+          <div class="box" >
+            <img src="images/feature3.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="ptitle">Fleece Performance</p>
+              <p class="price rhyssa">
+                $229.00
+                <span class="strike pl-3">$259.00</span>
+              </p>
+            
+              <div class="star-rating">
+                <i class="fa fa-star star" aria-hidden="true"></i>
+                <i class="fa fa-star star" aria-hidden="true"></i>
+                <i class="fa fa-star star" aria-hidden="true"></i>
+                <i class="fa fa-star star" aria-hidden="true"></i>
+                <i class="fa fa-star star" aria-hidden="true"></i>
+                <span class="review">5 Review(s)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide pb-5">   <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Fleece Performance</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+          
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div></div>
+        <div class="swiper-slide pb-5">   <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Fleece Performance</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+          
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div></div>
+        <div class="swiper-slide pb-5">   <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Fleece Performance</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+          
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div></div>
+        <div class="swiper-slide pb-5">   <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Fleece Performance</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+          
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div></div>
+        <div class="swiper-slide pb-5">   <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Fleece Performance</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+          
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div></div>
+        <div class="swiper-slide pb-5">   <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Fleece Performance</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+          
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div></div>
+        <div class="swiper-slide pb-5">   <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Fleece Performance</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+          
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div></div>
+        <div class="swiper-slide pb-5">   <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Fleece Performance</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+          
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div></div>
+        <div class="swiper-slide pb-5">   <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Fleece Performance</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+          
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div></div>
+        <div class="swiper-slide pb-5">   <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Fleece Performance</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+          
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div></div>
+        <div class="swiper-slide pb-5">   <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Fleece Performance</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+          
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div></div>  
+        <div class="swiper-slide pb-5">   <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Fleece Performance</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+          
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div></div>  
+        <div class="swiper-slide pb-5">   <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Fleece Performance</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+          
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div></div>  
+        <div class="swiper-slide pb-5">   <div class="box" >
+          <img src="images/feature3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="ptitle">Fleece Performance</p>
+            <p class="price rhyssa">
+              $229.00
+              <span class="strike pl-3">$259.00</span>
+            </p>
+          
+            <div class="star-rating">
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <i class="fa fa-star star" aria-hidden="true"></i>
+              <span class="review">5 Review(s)</span>
+            </div>
+          </div>
+        </div></div>  
+       <!-- Add Arrows -->
+    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+      </div>
+      </div>
+  </div>
+</div>
+</section>
+
+  
+
+  <!--sign up to newsletter-->
+  <section class ="signup ">
+      <div class="container pt-5 pb-5 font newsletter" >
+          <div class="row pt-5 pb-4">
+             
+              <div class="col-lg-6">
+               <h3 class="newsletter"><i class="fa fa-paper-plane fa-lg icon  pr-3" aria-hidden="true"></i>SIGN UP TO NEWSLETTER</h3>  
+               <p class="Receive pl-5">Recevie $50 Coupon for Shopping.</p> 
+              </div>
+              <div class="col-lg-6">
+                  <div class="searchform">
+                      <form id="newslettervalidate" class="form subscribe">
+                          <div class="control">
+                              <input type="email" placeholder="Enter your email address" id="newsletter"
+                                     name="email" class="input">
+                              <button type="submit" title="Subscribe" class="btn subscribe">
+                                  <span>Sign Up</span>
+                              </button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!----footer---->
+  <section class="black">
+      <div class="container pt-5 pb-3">
+          <div class="row pb-5 pt-5">
+              <div class="col-lg-4">
+                  <h6 class="footer-title mb-4 pl-3">ABOUT US</h6>
+                  <div class="list">
+                    <li class="foot mb-3 pt-2">Nullam tristique tortor nibh, 
+                        in viverra libero sollicitudin ac.
+                         Suspendisse quis lacinia ipsum. Etiam scelerisque sit amet lectus quis lacinia. Sed.</li>
+                    <li><i class="fa fa-map-marker icon mb-3 px-1" aria-hidden="true"></i> 218 Fifth Avenue, HeavenTower NewYork City</li>
+                    <li><i class="fa fa-phone icon mb-3 px-1" aria-hidden="true"></i> (+68) 123 456 7890</li>
+                    <li><i class="fa fa-envelope-o icon mb-3 px-1" aria-hidden="true"></i> Hot-Support@Rhyssa.com</li>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                  <h6 class="footer-title mb-4 pl-3">MY ACCOUNT</h6>
+                  <div class="list pt-2">
+                    <li class="list1">Sign In</li>
+                    <li class="list1">View Cart</li>
+                    <li class="list1">My Wishlist</li>
+                    <li class="list1">Terms & Conditions</li>
+                  <li class="list1"> Contact us</li>
+                    <li class="list1">Track My Order</li>
+                    <li class="list1"> Help</li>
+                  </div>
+              </div>
+              <div class="col-lg-3">
+                  <h6 class="footer-title mb-4  pl-3">INFORMATION</h6>
+                  <div class="list pt-2">
+                    <li class="list1">Specials</li>
+                    <li class="list1">New products</li>
+                    <li class="list1">Best sellers  </li>
+                    <li class="list1"> Our stores</li>
+                    <li class="list1">Contact us</li>
+                    <li class="list1">Sitemap</li>
+                    <li class="list1"> Blog</li>
+                  </div>
+              </div>
+              <div class="col-lg-2">
+                  <h6 class="footer-title mb-4  pl-3">FOLLOW US</h6>
+                  <div class="list pt-2">
+                    <li class="list1">Facebook</li>
+                    <li class="list1"> Instagram</li>
+                    <li class="list1">Twitter</li>
+                    <li class="list1"> Pinterest</li>
+                    <li class="list1"> Linkin</li>
+                    <li class="list1">Youtube</li>
+                  </div>
+              </div>
+          </div>
+      </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6">
+                      <p class="copyright">© Copyright 2019 <b><span class="rhyssa"> Rhyssa.</span></b> All Rights Reserved.</p>
+                  </div>
+                  <div class="col-md-6 rights">
+              <img src="images/footicon.PNG" class="footicon ">
+              <img src="images/footicon2.PNG" class="footicon ">
+              <img src="images/footicon3.PNG" class="footicon ">
+              <img src="images/footicon4.PNG" class="footicon ">
+                  </div>
+          </div>
+      </div>
+  </section>
+  
+
+
+  
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+
+   
+     var swiper = new Swiper('.swiper-container', {
+       slidesPerView: 2,
+       spaceBetween: 5,
+       freeMode: true,
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+       pagination: {
+         el: '.swiper-pagination',
+         clickable: true,
+       },
+     });
+
+
+     var swiper1 = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 35,
+      freeMode: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+    
+    var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+   </script>
+
+  <a href="#" id="scrollup" title="Scroll to Top">Scroll</a>  
+</div >
+</body>
+
+
+</html>
